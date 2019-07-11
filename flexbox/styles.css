@@ -1,91 +1,99 @@
-.synopsis {
-  color: #7E8184;        /* Light gray */
-  font-style: italic;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.synopsis em {
-  font-style: normal;
+.menu-container {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #5995DA; /* Blue */
+  padding: 20px 0;
 }
 
-.button:link,                 /* Change this */
-.button:visited {             /* Change this */
-  display: block;             /* Add this */
-  text-decoration: none;      /* Add this */
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  color: #FFF;                /* The rest is the same */
+.links {
+  border: 1px solid #fff; /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+
+.footer-three {
+  flex: 2;
+}
+
+.footer-one,
+.footer-three {
   background-color: #5995DA;
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid #5D6063;
-  border-radius: 5px;
-
-  width: 200px;
-  margin: 20px auto;
+  flex: initial;
+  width: 300px;
 }
 
-.button:hover,
-.button:visited:hover {
-  color: #FFF;
-  background-color: #76AEED;  /* Light blue */
-}
-
-.button:active,
-.button:visited:active {
-  color: #FFF;
-  background-color: #5995DA;  /* Blue */
-}
-
-#button-2 {
-  font-style: normal;
-  font-family: cursive;
-  background-color: #D55C5F;    /* Red */
-}
-
-.call-to-action:link,
-.call-to-action:visited {
-  font-style: italic;
-  background-color: #EEB75A;     /* Yellow */
-}
-
-.call-to-action:hover,
-.call-to-action:visited:hover {
-  background-color: #F5CF8E;     /* Light yellow */
-}
-
-.call-to-action:active,
-.call-to-action:visited:active {
-  background-color: #EEB75A;     /* Yellow */
-}
-
-.page {
-  width: 600px;
-  margin: 0 auto;
-}
-
-a:link {
-  color: blue;
-  text-decoration: none;
-}
-a:visited {
-  color: purple;
-}
-a:hover {
-  color: aqua;
-  text-decoration: underline;
-}
-a:active {
-  color: red;
-}
-a:visited:hover {
-  color: orange;
-}
-a:visited:active {
-  color: red;
-}
-
-.page > p:first-of-type {
-  color: #7E8184;
-  font-style: italic;
-  margin-bottom: 50px;
+.signup {
+  margin-left: auto;
 }
