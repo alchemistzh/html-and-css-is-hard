@@ -14,6 +14,7 @@
   height: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .menu {
@@ -44,6 +45,22 @@
 
 .feature-3 {
   background-color: #c8c6fa;
+}
+
+.illustration {
+  width: 100%;
+  display: block;
+}
+
+.header {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
 }
 
 /* Mobile Styles */
